@@ -29,15 +29,23 @@ Screenshot of successful Travis.CI Build
 
 - [5 pts] Your Github repository with the readme.md file selected showing the build failed
           status after the Travis CI build fails.
-![Github - failed build image in readme](figures/travis_build_after_removing_coordinates.png)
+![Github - failed build image in readme](figures/github_readme_error_build_icon.png)
+
+- [5 pts] The section of the POM file showing the coordinates after you’ve fixed them.
+![Github - fixed pom file](figures/github_fixed_pom_file.png)
+
+- [5 pts] Your Travis CI dashboard showing the successful build after the breaking change has
+          been fixed.
+![Travis.ci - fixed build after fixing breaking changes](figures/travis_fixed_build_after_fixing_coordinates.png)
+
+- [5 pts]  5 pts Your Github repository with the readme.md file selected showing the build success
+          status after the Travis CI build has recovered
+![Travis.ci - fixed build after fixing breaking changes](figures/travis_fixed_build_after_fixing_coordinates.png)
 
 
 
 
-8. 5 pts The section of the POM file showing the coordinates after you’ve fixed them.
 
-9. 5 pts Your Travis CI dashboard showing the successful build after the breaking change has
-been fixed.
 
 10. 5 pts Your Github repository with the readme.md file selected showing the build success
 status after the Travis CI build has recovered
