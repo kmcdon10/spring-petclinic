@@ -1,4 +1,4 @@
-#Deliverables [50 pts]
+# Deliverables [50 pts]
 For this week, please provide screen captures uploaded and embedded into the SUBMISSIONS.md
 file the show:
 
