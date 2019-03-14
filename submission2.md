@@ -4,6 +4,7 @@ file the show:
 
 ## DOCKER
 [5 pts] Your dockerfile. Please provide a link to this file rather than a screen capture.
+
 [Link to Dockerfile](Dockerfile)
 
 [5 pts] Your running docker instance as shown by a ps command.
@@ -27,15 +28,17 @@ application from the host system.
 ## DOCKER COMPOSE - APP SERVER AND MYSQL
 [5 pts] Your updated docker-compose.yml file containing the application server, built from your local Dockerfile,
 and the existing MySQL configuration. Please provide a link to this file rather than a screen capture.
+
 [Link to docker-compose](docker-compose.yml)
 
 [5 pts] Your updated application-mysql.properties file containing the URL change for the database server. Please provide
  a link to this file rather than a screen capture.
+
 [Link to application properties](src/main/resources/application-mysql.properties)
 
 [5 pts] The output from the docker-compose up command.
 ![Docker compose stacktrace](figures/docker_compose_up_terminal_error.png)
-* I could not figure out how to solve the error I was getting when I tried to start it up
+I couldn't figure out how to solve the error I was getting when I tried to start it up
 
 [5 pts] Your browser accessing the “Veterinarians” page of the website from your local container.
 * Not available, due to the error I encountered above
