@@ -6,14 +6,9 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure("2") do |config|
-  # The most common configuration options are documented and commented below.
-  # For a complete reference, please see the online documentation at
-  # https://docs.vagrantup.com.
-
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "centros/7"
-
+  config.vm.box = "centos/7"
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
@@ -23,7 +18,7 @@ Vagrant.configure("2") do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   # NOTE: This will enable public access to the opened port
-  # config.vm.network "forwarded_port", guest: 8080, host: 8484
+  config.vm.network "forwarded_port", guest: 8080, host: 8484
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine and only allow access
@@ -64,8 +59,8 @@ Vagrant.configure("2") do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", path: "bootstrap.sh"
-  config.vm.provision :file, source: "target/spring-petclinic-1.4.2.jar", destination: "/tmp/spring-petclinic-1.4.2.jar", run: "always"
-  config.vm.provision :shell, inline: "java -jar /tmp/spring-petclinic-1.4.2.jar &", run: "always"
+  config.vm.provision :file, source: "target/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar", destination: "/tmp/spring-petclinic-2.1.0.jar", run: "always"
+  config.vm.provision :shell, inline: "java -jar /tmp/spring-petclinic-2.1.0.jar &", run: "always"
   #   apt-get update
   #   apt-get install -y apache2
   # SHELL
